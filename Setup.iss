@@ -19,7 +19,7 @@ SolidCompression=yes
 WizardStyle=modern
 
 [Languages]
-Name: "chinesesimp"; MessagesFile: "compiler:Default.isl"
+Name: "en"; MessagesFile: "compiler:English.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
@@ -34,6 +34,8 @@ Source: "share\*"; DestDir: "{app}\share"; Flags: ignoreversion recursesubdirs r
 [Icons]
 Name: "{autoprograms}\PostgreSQL 14.2 & Citus 10.2.5"; Filename: "{app}\bin\c.bat"
 Name: "{autodesktop}\PostgreSQL 14.2 & Citus 10.2.5"; Filename: "{app}\bin\c.bat"; Tasks: desktopicon
+Name: "{autoprograms}\Create a Test Database"; Filename: "{app}\bin\test.bat"
+Name: "{autodesktop}\Create a Test Database"; Filename: "{app}\bin\test.bat"; Tasks: desktopicon
 Name: "{group}\{cm:UninstallProgram,PostgreSQL 14.2 & Citus 10.2.5}"; Filename: "{uninstallexe}"; WorkingDir: "{app}"
 
 
